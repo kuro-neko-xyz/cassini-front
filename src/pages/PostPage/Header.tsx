@@ -1,9 +1,20 @@
+import styled from 'styled-components';
+import Button from '../../components/Button';
+
+const Container = styled.div`
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-bottom: 0;
+`;
+
 const Header = () => {
   return (
-    <div>
-      <button>Cancel</button>
-      <button>Post</button>
-    </div>
+    <Container>
+      <Button>Cancel</Button>
+      <Button>Post</Button>
+    </Container>
   );
 };
 

@@ -58,6 +58,9 @@ const Container = styled.div`
     var(--color-3) 100%
   );
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
 export default Container;

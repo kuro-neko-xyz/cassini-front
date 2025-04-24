@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Button from '../../components/Button';
+import { Link } from 'react-router';
 
 const Container = styled.div`
   width: calc(100% - 40px);
@@ -12,7 +13,9 @@ const Container = styled.div`
 const Header = () => {
   return (
     <Container>
-      <Button>Cancel</Button>
+      <Link to="/">
+        <Button>Cancel</Button>
+      </Link>
       <Button>Post</Button>
     </Container>
   );

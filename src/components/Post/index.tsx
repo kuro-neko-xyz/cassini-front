@@ -1,7 +1,13 @@
-const Post = () => {
+import { FC } from 'react';
+
+interface PostProps {
+  data: string;
+}
+
+const Post: FC<PostProps> = ({ data }) => {
   return (
     <div>
-      <h1>Test</h1>
+      <h1>{data}</h1>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import Post from '../../components/Post';
 import Button from '../../components/Button';
 import Footer from './Footer';
 import { Link } from 'react-router';
+import Container from '../../components/Container';
 
 const HomePage = () => {
   const [postData, setPostData] = useState('Loading...');
@@ -22,14 +23,14 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div>
+    <Container>
       <Post data={postData} />
       <Footer>
         <Link to="/post">
           <Button>Post</Button>
         </Link>
       </Footer>
-    </div>
+    </Container>
   );
 };
 

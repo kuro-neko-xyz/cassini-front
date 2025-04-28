@@ -1,12 +1,19 @@
-import styled from 'styled-components';
+import { FC } from 'react';
+import styles from './styles.module.scss';
 
-const Button = styled.button`
-  padding: 10px 20px;
-  background-color: white;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  width: 100px;
-`;
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  fullWidth?: boolean;
+}
+
+const Button: FC<ButtonProps> = ({ children, fullWidth, ...props }) => {
+  return (
+    <button
+      className={`${styles.button} ${fullWidth ? styles.fullWidth : ''}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
 
 export default Button;

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Sometype Mono';
+  src: url('../public/SometypeMonot.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Sometype Mono', monospace;
+}
